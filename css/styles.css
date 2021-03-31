@@ -72,10 +72,14 @@ body {
 .container .utility-grid .item {
   height: 220px;
   width: 340px;
-  padding: 10px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border : 5px solid #2F4F4F;
 }
 
 .container .home {
@@ -95,22 +99,39 @@ body {
   margin-top: 30px;
 }
 
-#item1 {
-  background-image: url(../images/item1.jpg);
-  color: white;
-  border-radius: 20px;
- 
+.subitem1 {
+  height: 170px;
+  width: 331px;
+  margin-left: 0px;
 }
+
+.subitem1 img {
+  height: 160px;
+  width: 330px;
+}
+
+.subitem2 {
+  height: 35px;
+  width: 330px; 
+  background-color: #2F4F4F;
+  padding-left: 0px;
+}
+
+#item1 {
+  border-radius: 20px;
+}
+
 #item1 a{
     color: white;
-    margin-top: 80px;
+    margin-left: 50px;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
+    outline: none;
 }
 
 #item1:hover {
-    border: 8px solid #20afdf;
+    border: 6px solid #006400;
 }
 
 #item2 {
