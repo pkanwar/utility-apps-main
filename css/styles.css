@@ -41,6 +41,13 @@ body {
   margin-top: 5px;
 } 
 
+@media screen and (max-width: 750px) {
+  .navbar .utilityTitle {
+    font-size: 20px;
+  } 
+  
+}
+
 .max-width {
     max-width: 1300px;
     margin: auto;
@@ -152,6 +159,11 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 750px) {
+  .container .home .title {
+    font-size: 20px;
+  }
+}
 
 .subitem1 {
   height: 170px;
